@@ -49,7 +49,7 @@ export const Projects = [
 	},
 	{
 		name: 'SKPB Techstack Demo',
-		link: 'https://github.com/kllarena07/SKPB-Demo',
+		link: 'https://skpb-demo.fly.dev/',
 		desc: 'An Instagram clone webapp that shows off capabilities of the SvelteKit and Pocketbase (SKPB) techstack',
 		thumbnail: SKPB,
 		tech: [Svelte, Typescript, Fly, Docker, CSS, Pocketbase, Mailgun]
