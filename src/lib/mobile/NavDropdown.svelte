@@ -1,8 +1,12 @@
+<script lang="ts">
+  import { page } from "$app/stores";
+</script>
+
 <section>
   <nav>
-    <a href='/'>Home 🏠</a>
-    <a href='/projects'>Projects ⚡</a>
-    <a href='/skills'>Skills 🛠️</a>
+    <a href='/' class={$page.route.id == '/' ? 'underlined' : ''}>Home 🏠</a>
+    <a href='/projects' class={$page.route.id == '/projects' ? 'underlined' : ''}>Projects ⚡</a>
+    <a href='/skills' class={$page.route.id == '/skills' ? 'underlined' : ''}>Skills 🛠️</a>
   </nav>
 </section>
 
@@ -17,5 +21,8 @@
   }
   a {
     text-decoration: none;
+  }
+  .underlined {
+    text-decoration: underline;
   }
 </style>
