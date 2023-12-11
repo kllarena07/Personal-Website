@@ -1,10 +1,19 @@
 <script lang="ts">
-  export let isToggled = false
+	import { mobileDropdownEnabled } from "$lib/state";
+
+  let isToggled: boolean
+  mobileDropdownEnabled.subscribe(val => {
+    isToggled = val
+  })
+
+  const toggleNavbar = () => {
+    mobileDropdownEnabled.update(currVal => currVal = !currVal)
+  }
 </script>
 
 <header>
   <nav>
-    <button on:click={() => isToggled = !isToggled}>
+    <button on:click={toggleNavbar}>
       {#if !isToggled}
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
