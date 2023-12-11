@@ -16,7 +16,7 @@
 
 <style>
   main {
-    padding: 0 2rem;
+    padding: 0 1rem 2rem;
   }
   h1 {
     text-align: center;

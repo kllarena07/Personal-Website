@@ -2,6 +2,7 @@ import SumSum from '$lib/thumbnails/sumsum.avif';
 import ADHDMag from '$lib/thumbnails/adhd.jpg';
 import CriCri from '$lib/thumbnails/cricri.svg';
 import NeuroScanAI from '$lib/thumbnails/neuroscanai.jpg';
+import SKPB from '$lib/thumbnails/skpb.png';
 
 import React from '$lib/tech/react.svg';
 import Tailwind from '$lib/tech/tailwind.svg';
@@ -13,6 +14,9 @@ import Pocketbase from '$lib/tech/pocketbase.svg';
 import CSS from '$lib/tech/css.svg';
 import Python from '$lib/tech/python.svg';
 import Figma from '$lib/tech/figma.svg';
+import Fly from '$lib/tech/flyio.svg';
+import Docker from '$lib/tech/docker.svg';
+import Mailgun from '$lib/tech/mailgun.svg';
 
 export const Projects = [
 	{
@@ -41,6 +45,13 @@ export const Projects = [
 		link: 'https://github.com/kllarena07/Brain-Tumor-Detector',
 		desc: 'Web app that detects brain tumors in an inputted MRI scan',
 		thumbnail: NeuroScanAI,
-		tech: [Svelte, Vercel, Javascript, Python, Figma]
+		tech: [Svelte, Vercel, Javascript, Python, Figma, CSS]
+	},
+	{
+		name: 'SKPB Techstack Demo',
+		link: 'https://github.com/kllarena07/SKPB-Demo',
+		desc: 'An Instagram clone webapp that shows off capabilities of the SvelteKit and Pocketbase (SKPB) techstack',
+		thumbnail: SKPB,
+		tech: [Svelte, Typescript, Fly, Docker, CSS, Pocketbase, Mailgun]
 	}
 ];
