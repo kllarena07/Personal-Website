@@ -22,7 +22,6 @@
 </a>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
   a {
     display: block;
     max-width: 600px;
@@ -32,7 +31,6 @@
   }
   p {
     font-size: .9rem;
-    font-family: 'Inter', sans-serif;
   }
   .main {
     padding: .5rem 1rem;
