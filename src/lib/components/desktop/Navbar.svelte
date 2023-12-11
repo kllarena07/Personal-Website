@@ -5,9 +5,9 @@
 <header>
   <nav>
     <nav>
-      <a href='/' class={$page.route.id == '/' ? 'underlined' : ''} on:click={toggleNavbar}>Home 🏠</a>
-      <a href='/projects' class={$page.route.id == '/projects' ? 'underlined' : ''} on:click={toggleNavbar}>Projects ⚡</a>
-      <a href='/skills' class={$page.route.id == '/skills' ? 'underlined' : ''} on:click={toggleNavbar}>Skills 🛠️</a>
+      <a href='/' class={$page.route.id == '/' ? 'underlined' : ''}>Home 🏠</a>
+      <a href='/projects' class={$page.route.id == '/projects' ? 'underlined' : ''}>Projects ⚡</a>
+      <a href='/skills' class={$page.route.id == '/skills' ? 'underlined' : ''}>Skills 🛠️</a>
     </nav>
   </nav>
 </header>
