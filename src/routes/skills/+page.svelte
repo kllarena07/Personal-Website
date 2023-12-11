@@ -1,23 +1,37 @@
+<script lang="ts">
+  import { Skills } from "$lib/skills";
+</script>
+
 <main>
   <h1>Skills 🛠️</h1>
-  <h2>Technologies and tools that I use</h2>
   <ul>
-    <li>test</li>
+    {#each Skills as {name, src} }
+      <img src={src} alt="{name} is one of Kieran Llarena's skills" />
+    {/each}
   </ul>
 </main>
 
 <style>
   main {
+    display: flex;
+    flex-direction: column;
     padding: 0 2rem;
+    align-items: center;
   }
   h1 {
     text-align: center;
-  }
-  h2 {
-    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   ul {
+    display: flex;
+    max-width: 416px;
+    gap: .25rem;
+    flex-wrap: wrap;
     padding: 0;
     list-style-type: none;
+  }
+  img {
+    width: 5rem;
+    height: 5rem;
   }
 </style>

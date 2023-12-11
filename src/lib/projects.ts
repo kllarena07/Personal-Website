@@ -9,6 +9,7 @@ import Svelte from '$lib/tech/svelte.svg';
 import Vercel from '$lib/tech/vercel.svg';
 import Typescript from '$lib/tech/typescript.svg';
 import Pocketbase from '$lib/tech/pocketbase.svg';
+import CSS from '$lib/tech/css.svg';
 
 export const Projects = [
 	{
@@ -23,13 +24,13 @@ export const Projects = [
 		link: 'https://adhd-magazine.vercel.app/',
 		desc: 'A blog website for the Detroit magazine, ADHD Magazine',
 		thumbnail: ADHDMag,
-		tech: [Svelte, Vercel, Typescript, Pocketbase]
+		tech: [Svelte, Vercel, Typescript, Pocketbase, CSS]
 	},
 	{
 		name: 'El Cri Cri Website',
 		link: 'https://elcricri.com/',
 		desc: 'Personal website for the Detroit musician, El Cri Cri',
 		thumbnail: CriCri,
-		tech: [Svelte, Vercel, Javascript]
+		tech: [Svelte, Vercel, Javascript, CSS]
 	}
 ];
