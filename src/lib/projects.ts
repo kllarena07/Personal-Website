@@ -3,6 +3,7 @@ import ADHDMag from '$lib/thumbnails/adhd.jpg';
 import CriCri from '$lib/thumbnails/cricri.svg';
 import NeuroScanAI from '$lib/thumbnails/neuroscanai.jpg';
 import SKPB from '$lib/thumbnails/skpb.png';
+import MiDevfest from '$lib/thumbnails/midevfest.png';
 
 import React from '$lib/tech/react.svg';
 import Tailwind from '$lib/tech/tailwind.svg';
@@ -20,6 +21,13 @@ import Mailgun from '$lib/tech/mailgun.svg';
 
 export const Projects = [
 	{
+		name: 'Michigan DevFest 2023 Website',
+		link: 'https://midevfest.com/',
+		desc: 'The official website for the 2023 Michigan DevFest',
+		thumbnail: MiDevfest,
+		tech: [Tailwind, React, Javascript]
+	},
+	{
 		name: 'Summarization Nation',
 		link: 'https://www.producthunt.com/products/summarization-nation',
 		desc: 'A web app that generates recursive summaries from A/V files with adjustable user settings',
@@ -31,14 +39,14 @@ export const Projects = [
 		link: 'https://adhd-magazine.vercel.app/',
 		desc: 'A blog website for the Detroit magazine, ADHD Magazine',
 		thumbnail: ADHDMag,
-		tech: [Svelte, Vercel, Typescript, Pocketbase, CSS]
+		tech: [Svelte, Vercel, Typescript, Pocketbase, CSS, Figma]
 	},
 	{
 		name: 'El Cri Cri Website',
 		link: 'https://elcricri.com/',
 		desc: 'Personal website for the Detroit musician, El Cri Cri',
 		thumbnail: CriCri,
-		tech: [Svelte, Vercel, Javascript, CSS]
+		tech: [Svelte, Vercel, Javascript, CSS, Figma]
 	},
 	{
 		name: 'NeuroScan AI',
