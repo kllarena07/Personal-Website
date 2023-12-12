@@ -6,9 +6,9 @@
 <main>
   <h1>Projects ⚡</h1>
   <ul>
-    {#each Projects as { name, thumbnail, link, desc, tech }}
+    {#each Projects as { name, thumbnail, link, desc, tech, orientation }}
       <li>
-        <Project {name} {link} {thumbnail} {desc} {tech} />
+        <Project {name} {link} {thumbnail} {desc} {tech} {orientation} />
       </li>
     {/each}
   </ul>

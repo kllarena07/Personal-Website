@@ -4,11 +4,12 @@
   export let desc: string
   export let link: string
   export let tech: string[]
+  export let orientation: string
 </script>
 
 <a href={link} target="_blank" rel="noreferrer">
   <div class="thumb-wrapper">
-    <img src={thumbnail} alt="Thumbnail for project: {name}" width="600" height="120" />
+    <img src={thumbnail} alt="Thumbnail for project: {name}" width="600" height="120" class={orientation} />
     <div class="techstack">
       {#each tech as _, i}
         <img src={tech[i]} alt="{tech[i]} icon. It was used in this project: {name}" />
@@ -41,6 +42,21 @@
   }
   img {
     object-fit: cover;
+  }
+  .top {
+    object-position: top;
+  }
+  .bottom {
+    object-position: bottom;
+  }
+  .center {
+    object-position: center;
+  }
+  .left {
+    object-position: left;
+  }
+  .right {
+    object-position: right;
   }
   .techstack {
     position: absolute;
