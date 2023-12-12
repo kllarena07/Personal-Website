@@ -4,11 +4,9 @@
 
 <header>
   <nav>
-    <nav>
-      <a href='/' class={$page.route.id == '/' ? 'underlined' : ''}>Home 🏠</a>
-      <a href='/projects' class={$page.route.id == '/projects' ? 'underlined' : ''}>Projects ⚡</a>
-      <a href='/skills' class={$page.route.id == '/skills' ? 'underlined' : ''}>Skills 🛠️</a>
-    </nav>
+    <a href='/' class={$page.route.id == '/' ? 'underlined' : ''}>Home 🏠</a>
+    <a href='/projects' class={$page.route.id == '/projects' ? 'underlined' : ''}>Projects ⚡</a>
+    <a href='/skills' class={$page.route.id == '/skills' ? 'underlined' : ''}>Skills 🛠️</a>
   </nav>
 </header>
 
