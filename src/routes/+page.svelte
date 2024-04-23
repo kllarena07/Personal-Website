@@ -3,14 +3,13 @@
   import LinkedIn from '$lib/assets/linkin.svg'
   import GitHub from '$lib/assets/github.svg'
   import Hashnode from '$lib/assets/hashnode.svg'
-  import Resume from '$lib/assets/KieranLlarenaResume2023.pdf'
 </script>
 
 <main>
   <section id="grid">
     <section>
       <h1>Hi! I'm <span>Kieran Llarena</span></h1>
-      <h2>An 18-year-old developer from Michigan</h2>
+      <h2>A 19-year-old developer from Michigan</h2>
     </section>
     <img src={Myself} alt="Portrait of Kieran Llarena" />
     <a id="explore" href='/projects'>Explore</a>
@@ -25,7 +24,6 @@
         <img src={Hashnode} alt="The Hashnode icon that when clicked leads you to Kieran Llarena's Hashnode" />
       </a>
     </section>
-    <a id="download" href={Resume} download='KieranLlarenaResume2023.pdf'>Download my resume</a>
   </section>
 </main>
 
@@ -64,9 +62,5 @@
   }
   span {
     color: #AD00FF;
-  }
-  #download {
-    font-size: .8rem;
-    color: #9B9B9B;
   }
 </style>
