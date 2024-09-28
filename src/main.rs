@@ -14,7 +14,7 @@ async fn index() -> Result<NamedFile> {
 #[get("/projects")]
 async fn projects() -> Result<NamedFile> {
     let root = env::current_dir().unwrap();
-    let abs_path = format!("{}/app/projects.html", root.to_str().unwrap());
+    let abs_path = format!("{}/app/projects/index.html", root.to_str().unwrap());
     let path: PathBuf = PathBuf::from(abs_path);
     Ok(NamedFile::open(path)?)
 }
@@ -22,7 +22,7 @@ async fn projects() -> Result<NamedFile> {
 #[get("/skills")]
 async fn skills() -> Result<NamedFile> {
     let root = env::current_dir().unwrap();
-    let abs_path = format!("{}/app/skills.html", root.to_str().unwrap());
+    let abs_path = format!("{}/app/skills/index.html", root.to_str().unwrap());
     let path: PathBuf = PathBuf::from(abs_path);
     Ok(NamedFile::open(path)?)
 }
