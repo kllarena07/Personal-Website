@@ -1,14 +1,20 @@
-use actix_web::{get, App, HttpServer, Responder};
+use actix_files::NamedFile;
+use actix_web::{get, App, HttpServer, Result};
+use std::env;
+use std::path::PathBuf;
 
 #[get("/")]
-async fn index() -> impl Responder {
-    "Hello, World!"
+async fn index() -> Result<NamedFile> {
+    let root = env::current_dir().unwrap();
+    let abs_path = format!("{}/app/index.html", root.to_str().unwrap());
+    let path: PathBuf = PathBuf::from(abs_path);
+    Ok(NamedFile::open(path)?)
 }
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| App::new().service(index))
-        .bind(("127.0.0.1", 8080))?
+        .bind("127.0.0.1:8080")? // Bind the server to localhost on port 8080
         .run()
         .await
 }
