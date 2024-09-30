@@ -30,7 +30,7 @@ async fn skills() -> Result<NamedFile> {
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| App::new().service(index).service(projects).service(skills))
-        .bind("127.0.0.1:8080")? // Bind the server to localhost on port 8080
+        .bind("127.0.0.1:8080") 
         .run()
         .await
 }
